@@ -1,0 +1,17 @@
+{
+  "name": "design-source",
+  "version": "1.0.0",
+  "description": "proof of concept",
+  "main": "index.ts",
+  "repository": "https://github.com/3runo/design-source.git",
+  "author": "Bruno Batista <bruno.batista@personio.de>",
+  "license": "MIT",
+  "scripts": {
+    "install-and-link-packages": "lerna bootstrap"
+  },
+  "devDependencies": {
+    "lerna": "^3.20.2",
+    "npmClient": "yarn",
+    "version": "independent"
+  }
+}
