@@ -7,11 +7,37 @@
   "author": "Bruno Batista <bruno.batista@personio.de>",
   "license": "MIT",
   "scripts": {
-    "install-and-link-packages": "lerna bootstrap"
+    "install:link:all": "lerna bootstrap",
+    "list:packages": "lerna list",
+    "list:changes": "lerna changed",
+    "build:all": "lerna run build"
   },
   "devDependencies": {
     "lerna": "^3.20.2",
-    "npmClient": "yarn",
-    "version": "independent"
+    "yarn": "^1.21.1"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "@babel/preset-typescript": "^7.8.3",
+    "@types/lodash": "^4.14.149",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.5",
+    "@types/webpack-merge": "^4.1.5",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "prettier": "^1.19.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "terser-webpack-plugin": "^2.3.2",
+    "typescript": "^3.7.5",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-merge": "^4.2.2",
+    "webpack-node-externals": "^1.7.2"
   }
 }
