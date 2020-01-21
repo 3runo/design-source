@@ -7,7 +7,7 @@
   "author": "Bruno Batista <bruno.batista@personio.de>",
   "license": "MIT",
   "scripts": {
-    "install:link:all": "lerna bootstrap",
+    "install:all": "lerna bootstrap",
     "list:packages": "lerna list",
     "list:changes": "lerna changed",
     "build:all": "lerna run build"

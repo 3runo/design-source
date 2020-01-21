@@ -18,6 +18,8 @@
       "version": "detect" // Tells eslint-plugin-react to automatically detect the version of React to use
     }
   },
-  "rules": {},
+  "rules": {
+    "@typescript-eslint/explicit-function-return-type": [0]
+  },
   "plugins": ["react"]
 }

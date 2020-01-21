@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const webpack = require('webpack');
 const path = require('path');
 const webpackMerge = require('webpack-merge');
@@ -5,8 +6,11 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const loadPresets = require('../../webpack/loadPresets');
 
 const fallbackEnv = { mode: 'production', presets: [], extractCSS: false };
-const modeConfig = (env) => require(`../../webpack/webpack.${env.mode}.js`)(env);
-const percentageLog = (percentage, message) => { console.info(`${(percentage * 100).toFixed()}% ${message}`); }
+const modeConfig = (env) =>
+  require(`../../webpack/webpack.${env.mode}.js`)(env);
+const percentageLog = (percentage, message) => {
+  console.info(`${(percentage * 100).toFixed()}% ${message}`);
+};
 
 module.exports = (env) => {
   console.log('📦 ', env);
@@ -42,7 +46,9 @@ module.exports = (env) => {
         umdNamedDefine: true,
       },
       plugins: [
-        new CleanWebpackPlugin({ cleanAfterEveryBuildPatterns: ['dist', 'build'] }),
+        new CleanWebpackPlugin({
+          cleanAfterEveryBuildPatterns: ['dist', 'build'],
+        }),
         new webpack.ProgressPlugin(percentageLog),
       ],
     },

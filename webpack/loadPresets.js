@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const webpackMerge = require('webpack-merge');
 
 const loadPresets = (env = { presets: [] }) => {

@@ -20,5 +20,8 @@
   },
   "[typescriptreact]": {
     "editor.formatOnSave": true
-  }
+  },
+  "cSpell.words": [
+    "Interop"
+  ]
 }

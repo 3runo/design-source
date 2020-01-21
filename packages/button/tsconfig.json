@@ -1,6 +1,3 @@
 {
-  "extends": "../../tsconfig.json",
-  "compilerOptions": {
-    "rootDir": "button/"
-  }
+  "extends": "../../tsconfig.json"
 }
