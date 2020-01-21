@@ -1,10 +1,7 @@
-import React from 'react';
-type ButtonProps = { children: any }
+import * as React from 'react';
 
-export default function Button(props: ButtonProps) {
-    return (
-        <button>
-            {props.children}
-        </button>
-    );
+type ButtonProps = { children: any };
+
+export default function Button(props: ButtonProps): JSX.Element {
+  return <button>{props.children}</button>;
 }

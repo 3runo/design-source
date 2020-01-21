@@ -1,1 +1,1 @@
-module.exports = { "extends": "../../babel.config" };
+module.exports = { extends: '../../babel.config' };
