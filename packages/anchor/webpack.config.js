@@ -35,7 +35,7 @@ module.exports = (env) => {
       output: {
         path: path.join(__dirname, 'dist'),
         filename: 'bundle.js',
-        library: '@design-source/button',
+        library: '@design-source/anchor',
         libraryTarget: 'umd',
         umdNamedDefine: true,
       },
